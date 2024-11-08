@@ -20,8 +20,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 .container {
-  max-width: 1200px;
+  max-width: 1024px;
   margin: 0 auto;
+}
+.yellow {
+  color: #fabe4c;
+}
+.half-width {
+  width: 100%;
 }
 
 /* CSS Rest */
@@ -93,4 +99,79 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+/* 1. Header Section */
+.header-section {
+  background-color: #fffbf0;
+}
+/* 1.1 Navigation */
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.site-logo {
+  width: 290px;
+}
+.menu-list {
+  display: flex;
+  column-gap: 30px;
+}
+.menu-list li {
+  list-style: none;
+}
+.menu-list li a {
+  text-decoration: none;
+  color: #3c3c3c;
+  font-family: poppins;
+}
+.mobile-menu img {
+  width: 30px;
+}
+.mobile-menu {
+  display: none;
+}
+
+/* 1.2 Hero Section */
+.hero-seciton {
+  display: flex;
+  align-items: center;
+  column-gap: 100px;
+  padding: 10px 0 100px 0;
+}
+.hero-seciton .content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+.hero-seciton h1 {
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 90px;
+}
+.hero-seciton p,
+a {
+  font-family: poppins;
+}
+.hero-seciton .btn {
+  display: flex;
+  align-items: center;
+}
+.hero-seciton .buy-now {
+  display: flex;
+  column-gap: 10px;
+  background: linear-gradient(180deg, #a4bc46 0%, #85a019 100%);
+  padding: 20px 20px;
+  border-radius: 5px;
+}
+.hero-seciton .buy-now a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+.header-section .buy-now img {
+  width: 19px;
 }
